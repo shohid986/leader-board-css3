@@ -1,0 +1,158 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* common style */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* top player style */
+.container {
+  width: 870px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding-bottom: 55px;
+}
+.top-player {
+  padding: 5px 0px 21px 40px;
+}
+.section-tittle {
+  color: #562eff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+  margin-left: 10px;
+}
+.player h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 18px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+}
+/* top-blog */
+.top-blogs {
+  margin-left: 22px;
+}
+.by-color {
+  color: #9f9f9f;
+}
+
+.author {
+  color: #562eff;
+}
+.thumnail img {
+  width: 177px;
+  height: 117px;
+  margin-right: 16px;
+}
+.blog {
+  display: flex;
+  align-items: flex-start;
+}
+.thumnail-tittle h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+}
+.thumnail-tittle a {
+  text-decoration: none;
+}
+.thumnail-tittle p {
+  margin: 0;
+  font-weight: 500;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 26px;
+}
+.tittle {
+  margin: 30px 0 30px 0;
+}
+/* lates-course */
+#course-tittle {
+  margin: 33px 0 33px 22px;
+}
+.banar img {
+  width: 224px;
+  height: 104px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.course-info {
+  display: flex;
+  font-size: 14.9px;
+}
+.course-details h3 {
+  margin: 8px 0 10px 0;
+}
+#authors {
+  color: #ed6b4f;
+  margin-bottom: 18px;
+}
+.lates-course {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 70px;
+  width: 255px;
+  height: 270px;
+  margin-left: 25px;
+}
+.timing {
+  margin: 0 19px 0 4px;
+}
+.duration {
+  color: #ff4a60;
+  background-color: #ffe4e8;
+  padding: 2px;
+  border-radius: 20%;
+}
+
+/* media quaries */
+
+/* phone media quaries */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .top-player {
+    padding: 0;
+  }
+  .players,
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top-blogs {
+    margin: 0px;
+  }
+  .thumnail img {
+    margin: 5px;
+  }
+  .lates-course {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
